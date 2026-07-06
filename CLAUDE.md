@@ -19,3 +19,12 @@ After **any** change, however small, immediately:
 ## Notes
 - No local Node or Python available; preview locally with `.claude/serve.ps1` (PowerShell static server on port 5500).
 - DNS/domain was mid-transfer from Webador → Squarespace; live custom domain may lag behind pushes until that completes.
+
+## ⚠️ CNAME temporarily removed (re-add after transfer)
+The `CNAME` file (custom domain) was **removed** on 2026-07-05 because GitHub Pages' domain
+health-check kept **failing the deploy** while `soothingsolutionsmassagetherapy.com` is mid-transfer
+(DNS in flux). Backup lives at `.claude/CNAME.bak`. The site currently deploys cleanly to
+**https://maryirvine347.github.io/**. **Once the transfer completes and DNS points to GitHub's
+IPs (185.199.108–111.153 + `www` → maryirvine347.github.io), restore the CNAME:**
+`cp .claude/CNAME.bak CNAME && git add CNAME && git commit -m "Restore custom domain" && git push`,
+then enable "Enforce HTTPS" in Settings → Pages.
