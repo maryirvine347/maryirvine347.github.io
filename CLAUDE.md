@@ -20,11 +20,16 @@ After **any** change, however small, immediately:
 - No local Node or Python available; preview locally with `.claude/serve.ps1` (PowerShell static server on port 5500).
 - DNS/domain was mid-transfer from Webador → Squarespace; live custom domain may lag behind pushes until that completes.
 
-## ⚠️ CNAME temporarily removed (re-add after transfer)
-The `CNAME` file (custom domain) was **removed** on 2026-07-05 because GitHub Pages' domain
-health-check kept **failing the deploy** while `soothingsolutionsmassagetherapy.com` is mid-transfer
-(DNS in flux). Backup lives at `.claude/CNAME.bak`. The site currently deploys cleanly to
-**https://maryirvine347.github.io/**. **Once the transfer completes and DNS points to GitHub's
-IPs (185.199.108–111.153 + `www` → maryirvine347.github.io), restore the CNAME:**
-`cp .claude/CNAME.bak CNAME && git add CNAME && git commit -m "Restore custom domain" && git push`,
-then enable "Enforce HTTPS" in Settings → Pages.
+## Custom domain — RESTORED & LIVE (2026-07-15)
+The Webador→Squarespace transfer **completed 2026-07-15**. The `CNAME`
+(`soothingsolutionsmassagetherapy.com`) is **restored** and the domain is **verified** to the
+`maryirvine347` GitHub account (Settings → Pages → Verified domains). Note: while the CNAME was
+removed during the transfer, a spammer briefly **squatted** the unclaimed domain on GitHub Pages;
+verifying the domain (a `_github-pages-challenge-maryirvine347` TXT record in Squarespace DNS)
+kicked them off. The apex **https://soothingsolutionsmassagetherapy.com serves the site**; `www`
+was still provisioning at cutover.
+
+**Lesson:** never leave `CNAME` removed once DNS points at GitHub's IPs — an unclaimed domain can be
+squatted. If Pages 404s the domain ("Site not found"), re-save the custom domain in repo
+Settings → Pages (remove → re-add). Enable **"Enforce HTTPS"** once the cert issues.
+Backup remains at `.claude/CNAME.bak`.
