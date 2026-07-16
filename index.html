@@ -300,6 +300,12 @@
   .section-head{max-width:680px; margin-bottom:56px;}
   .section-head.center{margin-left:auto; margin-right:auto; text-align:center;}
   .section-head h2{font-size:clamp(2rem, 3.4vw, 2.85rem);}
+  .services-lead{
+    font-family:'Fraunces', serif; font-style:italic; font-weight:480;
+    font-size:clamp(1.55rem, 2.9vw, 2.15rem); line-height:1.25; color:var(--burnt-dark);
+    margin:0 0 14px;
+  }
+  .section-head h2.subhead{font-size:clamp(1.35rem, 2.1vw, 1.6rem); font-weight:520; color:var(--pine-dark);}
   .service-grid{
     display:grid; grid-template-columns:repeat(3, 1fr); gap:26px;
   }
@@ -528,7 +534,6 @@
   <section class="tagline-band">
     <div class="wrap">
       <p class="reveal tagline-lead">You've been carrying enough.</p>
-      <p class="reveal tagline-sub">Focused, therapeutic massage that releases held tension, calms your stress, and helps you feel like yourself again.</p>
     </div>
   </section>
 
@@ -536,7 +541,8 @@
     <div class="wrap">
       <div class="section-head reveal">
         <div class="eyebrow">Services</div>
-        <h2>A full toolkit for pain, tension, and stress</h2>
+        <p class="services-lead">Focused, therapeutic massage that releases held tension, calms your stress, and helps you feel like yourself again.</p>
+        <h2 class="subhead">A full toolkit for pain, tension, and stress</h2>
         <p style="color:var(--ink-soft); font-size:1.05rem;">From deep therapeutic work to gentle, restorative care, here's the range I offer. Most sessions blend a few of these, depending on what you came in for.</p>
       </div>
 
