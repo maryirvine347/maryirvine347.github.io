@@ -255,11 +255,6 @@
   }
   .hero .wrap{position:relative; z-index:2; max-width:760px; padding-bottom:150px;}
   @media (max-width:940px){ .hero .wrap{padding-bottom:110px;} }
-  .hero-kicker{
-    display:block; font-size:clamp(0.92rem, 1.5vw, 1.08rem); font-weight:600;
-    letter-spacing:0.16em; text-transform:uppercase; color:var(--burnt);
-    margin-bottom:16px; text-shadow:0 1px 12px rgba(0,0,0,0.4);
-  }
   .hero h1{
     color:#fbf7ec; font-size:clamp(2.6rem, 4.6vw, 3.9rem); font-weight:520;
     max-width:18ch; text-shadow:0 2px 24px rgba(0,0,0,0.35);
@@ -287,6 +282,14 @@
     line-height:1.4; color:#fbf8ef;
   }
   .philosophy cite{display:block; margin-top:22px; font-style:normal; font-family:'Work Sans',sans-serif; font-size:0.86rem; letter-spacing:0.08em; text-transform:uppercase; color:#b9cbd8;}
+
+  /* ---------- tagline band ---------- */
+  .tagline-band{background:var(--burnt-tint); text-align:center; padding:74px 24px;}
+  .tagline-band p{
+    margin:0 auto; max-width:20ch;
+    font-family:'Fraunces', serif; font-style:italic; font-weight:480;
+    font-size:clamp(1.7rem, 3.6vw, 2.8rem); line-height:1.22; color:var(--burnt-dark);
+  }
 
   /* ---------- services ---------- */
   .services{background:var(--linen);}
@@ -498,7 +501,6 @@
   <section class="hero">
     <div class="wrap">
       <div class="hero-copy">
-        <span class="hero-kicker">You've been carrying this long enough</span>
         <h1>Personalized <em>massage therapy</em> in Carmel, Indiana</h1>
         <p class="lede">I'm Mary, and I treat every client like a person, not a time slot. Busy parent, desk-bound all day, or just long overdue for an hour that's yours? If your body's been asking for some attention, consider this your nudge.</p>
         <div class="hero-ctas">
@@ -516,6 +518,12 @@
       <svg viewBox="0 0 1440 140" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M0,64 C240,120 480,10 720,50 C960,90 1200,30 1440,70 L1440,140 L0,140 Z" fill="#f6f1e6"/>
       </svg>
+    </div>
+  </section>
+
+  <section class="tagline-band">
+    <div class="wrap">
+      <p class="reveal">You've been carrying this long enough.</p>
     </div>
   </section>
 
