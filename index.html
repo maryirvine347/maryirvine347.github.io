@@ -285,10 +285,14 @@
 
   /* ---------- tagline band ---------- */
   .tagline-band{background:var(--burnt-tint); text-align:center; padding:74px 24px;}
-  .tagline-band p{
+  .tagline-band .tagline-lead{
     margin:0 auto; max-width:20ch;
     font-family:'Fraunces', serif; font-style:italic; font-weight:480;
     font-size:clamp(1.7rem, 3.6vw, 2.8rem); line-height:1.22; color:var(--burnt-dark);
+  }
+  .tagline-band .tagline-sub{
+    margin:20px auto 0; max-width:46ch;
+    font-size:clamp(1rem, 1.6vw, 1.12rem); line-height:1.6; color:var(--ink-soft);
   }
 
   /* ---------- services ---------- */
@@ -523,7 +527,8 @@
 
   <section class="tagline-band">
     <div class="wrap">
-      <p class="reveal">You've been carrying this long enough.</p>
+      <p class="reveal tagline-lead">You've been carrying enough.</p>
+      <p class="reveal tagline-sub">Focused, therapeutic massage that releases held tension, calms your stress, and helps you feel like yourself again.</p>
     </div>
   </section>
 
