@@ -255,6 +255,11 @@
   }
   .hero .wrap{position:relative; z-index:2; max-width:760px; padding-bottom:150px;}
   @media (max-width:940px){ .hero .wrap{padding-bottom:110px;} }
+  .hero-kicker{
+    display:block; font-size:clamp(0.92rem, 1.5vw, 1.08rem); font-weight:600;
+    letter-spacing:0.16em; text-transform:uppercase; color:var(--burnt);
+    margin-bottom:16px; text-shadow:0 1px 12px rgba(0,0,0,0.4);
+  }
   .hero h1{
     color:#fbf7ec; font-size:clamp(2.6rem, 4.6vw, 3.9rem); font-weight:520;
     max-width:18ch; text-shadow:0 2px 24px rgba(0,0,0,0.35);
@@ -493,6 +498,7 @@
   <section class="hero">
     <div class="wrap">
       <div class="hero-copy">
+        <span class="hero-kicker">You've been carrying this long enough</span>
         <h1>Personalized <em>massage therapy</em> in Carmel, Indiana</h1>
         <p class="lede">I'm Mary, and I treat every client like a person, not a time slot. Busy parent, desk-bound all day, or just long overdue for an hour that's yours? If your body's been asking for some attention, consider this your nudge.</p>
         <div class="hero-ctas">
