@@ -415,6 +415,25 @@
   .info-card.feature .feature-price{display:block; font-family:'Fraunces',serif; font-size:2.1rem; font-weight:560; color:#fff; line-height:1; margin:4px 0 14px;}
   .info-card.feature .feature-price span{display:block; font-family:'Work Sans',sans-serif; font-size:0.8rem; font-weight:500; letter-spacing:0.02em; color:#fdeadd; margin-top:7px;}
 
+  /* ---------- referral ---------- */
+  .referral{background:var(--linen); padding-top:0;}
+  .referral-card{
+    max-width:780px; margin:0 auto; text-align:center;
+    background:linear-gradient(155deg, var(--pine) 0%, var(--pine-dark) 100%);
+    color:#eef3ec; border-radius:var(--radius-lg); padding:54px 44px; box-shadow:var(--shadow-soft);
+  }
+  .referral-card .eyebrow{color:var(--sage); justify-content:center;}
+  .referral-card .eyebrow::before{background:var(--sage);}
+  .referral-card h2{color:#fbf7ec;}
+  .referral-amount{
+    display:inline-block; font-family:'Fraunces',serif; font-weight:560;
+    font-size:2.6rem; color:var(--burnt); background:var(--burnt-tint);
+    border-radius:999px; padding:6px 26px; margin:6px 0 18px;
+  }
+  .referral-card p{color:#d9d3c1; font-size:1.05rem; max-width:580px; margin:0 auto 1em;}
+  .referral-card strong{color:#fbf7ec;}
+  .referral-how{font-size:0.92rem; color:#b9cbd8; margin-top:20px; margin-bottom:0;}
+
   /* ---------- schedule ---------- */
   .schedule{background:var(--linen);}
   .schedule .wrap{display:grid; grid-template-columns:0.9fr 1.1fr; gap:60px;}
@@ -704,6 +723,18 @@
             <p>Accepted via Zelle or Venmo. Cards aren't supported yet. Thank you for understanding.</p>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="referral section-pad">
+    <div class="wrap">
+      <div class="referral-card reveal">
+        <div class="eyebrow">Refer a friend</div>
+        <h2>Share the relief, get $15 off</h2>
+        <span class="referral-amount">$15 off</span>
+        <p>Know someone carrying tension they shouldn't be? When you refer a new client and they come in for their session, you'll get <strong>$15 off your next massage</strong> as a thank-you.</p>
+        <p class="referral-how">Refer as many friends as you like! Each one who comes in earns you $15 off a session, used one discount per visit, so three referrals means $15 off three separate massages, not $45 off one. Just have them mention your name when they book.</p>
       </div>
     </div>
   </section>
