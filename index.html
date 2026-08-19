@@ -434,6 +434,22 @@
   .referral-card strong{color:#fbf7ec;}
   .referral-how{font-size:0.92rem; color:#b9cbd8; margin-top:20px; margin-bottom:0;}
 
+  /* ---------- reviews ---------- */
+  .reviews{background:var(--sage-tint);}
+  .reviews-rating{margin-top:8px; font-size:0.95rem; color:var(--ink-soft); font-weight:500;}
+  .reviews-rating .stars{color:#e0a53b; letter-spacing:2px; margin-right:6px;}
+  .reviews-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:26px; margin-top:44px;}
+  @media (max-width:900px){ .reviews-grid{grid-template-columns:1fr;} }
+  .review-card{
+    background:var(--card); border:1px solid rgba(44,74,59,0.1); border-radius:var(--radius-lg);
+    padding:30px 30px 26px; margin:0; display:flex; flex-direction:column; box-shadow:var(--shadow-soft);
+  }
+  .review-card .stars{color:#e0a53b; letter-spacing:2px; font-size:1.05rem; margin-bottom:14px;}
+  .review-card blockquote{margin:0 0 20px; font-size:1rem; line-height:1.7; color:var(--charcoal);}
+  .review-card figcaption{margin-top:auto; font-family:'Fraunces',serif; font-weight:520; color:var(--pine-dark); font-size:1rem;}
+  .review-card figcaption span{display:block; font-family:'Work Sans',sans-serif; font-weight:400; font-size:0.8rem; color:var(--ink-soft); margin-top:2px;}
+  .reviews-cta{text-align:center; margin-top:40px;}
+
   /* ---------- schedule ---------- */
   .schedule{background:var(--linen);}
   .schedule .wrap{display:grid; grid-template-columns:0.9fr 1.1fr; gap:60px;}
@@ -487,6 +503,7 @@
       <a href="#services">Services</a>
       <a href="#about">About</a>
       <a href="#approach">Approach</a>
+      <a href="#reviews">Reviews</a>
       <a href="#pricing">Pricing</a>
       <a href="#visit">Visit</a>
     </nav>
@@ -507,6 +524,7 @@
   <a href="#services">Services</a>
   <a href="#about">About</a>
   <a href="#approach">Approach</a>
+  <a href="#reviews">Reviews</a>
   <a href="#pricing">Pricing</a>
   <a href="#visit">Visit</a>
   <a href="tel:+13178124117">(317) 812-4117</a>
@@ -688,6 +706,36 @@
           <button class="faq-q"><span>What's included in the price?</span><span class="icon"></span></button>
           <div class="faq-answer"><p>All of it. Swedish and deep tissue are never priced separately. Both are therapeutic, and you get whichever (or whatever mix) actually helps.</p></div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="reviews section-pad" id="reviews">
+    <div class="wrap">
+      <div class="section-head center reveal" style="margin-left:auto; margin-right:auto;">
+        <div class="eyebrow" style="justify-content:center;">Kind words</div>
+        <h2>What my clients say</h2>
+        <p class="reviews-rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>5.0 on Google &middot; 7 reviews</p>
+      </div>
+      <div class="reviews-grid">
+        <figure class="review-card reveal">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>Mary is absolutely amazing! I had never had a massage before and was so anxious to even get one. She has gone above and beyond to make me feel comfortable and have an amazing experience. Since I started getting massages from her, it's the first time in years that I haven't been in constant pain. I couldn't recommend her enough!</blockquote>
+          <figcaption>Aubrey C.<span>via Google</span></figcaption>
+        </figure>
+        <figure class="review-card reveal">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>Mary is an amazing massage therapist! I could immediately tell she stood out from every other experience I've had with massage therapy. If you're in need of a massage or related services, Mary should be at the top of your list.</blockquote>
+          <figcaption>James R.<span>via Google</span></figcaption>
+        </figure>
+        <figure class="review-card reveal">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>Mary investigated my symptoms and was able to solve my problem in a timely manner. She's thorough and great at what she does!</blockquote>
+          <figcaption>Simeon H.<span>via Google</span></figcaption>
+        </figure>
+      </div>
+      <div class="reviews-cta reveal">
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=Soothing+Solutions+Massage+Therapy+Carmel+IN" target="_blank" rel="noopener" class="btn btn-outline">Read more on Google</a>
       </div>
     </div>
   </section>
