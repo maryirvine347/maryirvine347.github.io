@@ -229,8 +229,11 @@
   }
   .mobile-panel.open{display:flex;}
   .mobile-panel a{font-family:'Fraunces',serif; font-size:1.6rem; text-decoration:none; color:var(--pine-dark);}
-  @media (max-width:900px){
-    nav.primary-nav, .nav-actions .phone-pill{display:none;}
+  @media (max-width:1180px){
+    .nav-actions .phone-pill{display:none;}
+  }
+  @media (max-width:1024px){
+    nav.primary-nav{display:none;}
     .menu-btn{display:inline-flex;}
   }
   @media (max-width:600px){
