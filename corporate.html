@@ -491,6 +491,13 @@
   .quote-list{list-style:none; padding:0; margin:0 0 28px;}
   .quote-list li{position:relative; padding-left:30px; margin-bottom:12px; color:var(--pine-dark); font-weight:500;}
   .quote-list li::before{content:""; position:absolute; left:0; top:4px; width:18px; height:18px; border-radius:50%; background:var(--pine-tint) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232c4a3b' stroke-width='3'%3E%3Cpath d='M6 12l4 4 8-8'/%3E%3C/svg%3E") center/12px no-repeat;}
+  .why-intro{display:grid; grid-template-columns:1.05fr 0.95fr; gap:56px; align-items:center; margin-bottom:56px;}
+  .why-intro .section-head{margin-bottom:0;}
+  .why-photos{display:grid; grid-template-columns:1fr 1fr; gap:16px; padding-bottom:40px;}
+  .why-photos img{width:100%; height:auto; aspect-ratio:4/5; object-fit:cover; border-radius:var(--radius-md); box-shadow:var(--shadow-soft); display:block;}
+  .why-photos img:last-child{transform:translateY(40px);}
+  @media (max-width:900px){ .why-intro{grid-template-columns:1fr; gap:36px;} }
+  @media (max-width:520px){ .why-photos{gap:10px; padding-bottom:24px;} .why-photos img:last-child{transform:translateY(24px);} }
   .primary-nav a.active{color:var(--burnt);}
 </style>
 </head>
@@ -559,11 +566,17 @@
 
   <section class="services section-pad" id="why">
     <div class="wrap">
+      <div class="why-intro">
       <div class="section-head reveal">
         <div class="eyebrow">Why chair massage</div>
         <p class="services-lead">Your team carries a lot. Mostly in their shoulders.</p>
         <h2 class="subhead">A simple perk people actually use, and remember</h2>
         <p style="color:var(--ink-soft); font-size:1.05rem;">Desk work, long shifts, and deadline weeks all land in the same places: neck, shoulders, upper back, and hands. A short, focused chair massage targets exactly those spots, with no oils, no changing, and no time off the clock beyond a quick break.</p>
+      </div>
+      <div class="why-photos reveal">
+        <img src="chair-massage-1.jpg" alt="Mary Irvine, LMT, massaging a client's neck and shoulders in a massage chair at an on-site event" width="960" height="1200" loading="lazy">
+        <img src="chair-massage-2.jpg" alt="Mary Irvine, LMT, working on a client's upper back during an on-site chair massage" width="960" height="1200" loading="lazy">
+      </div>
       </div>
 
       <div class="service-grid">
